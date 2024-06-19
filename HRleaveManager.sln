@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{FE8F2175-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrLeaveManagementDomain", "src\Core\HrLeaveManagementDomain\HrLeaveManagementDomain.csproj", "{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrLeaveManagementApplication", "src\Core\HrLeaveManagementApplication\HrLeaveManagementApplication.csproj", "{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +30,14 @@ Global
 		{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FE8F2175-9D13-4DB5-B35F-4FF955E7D460} = {6C59E447-0A55-44B8-A7DA-AB5043197BE8}
 		{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43} = {FE8F2175-9D13-4DB5-B35F-4FF955E7D460}
+		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9} = {FE8F2175-9D13-4DB5-B35F-4FF955E7D460}
 	EndGlobalSection
 EndGlobal
