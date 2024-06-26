@@ -11,7 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features/LeaveType/Commands/" />
+    <Folder Include="Features/LeaveType/Commands/DeleteLeaveType/" />
+    <Folder Include="Features/LeaveType/Commands/UpdateLeaveType/" />
   </ItemGroup>
 
   <PropertyGroup>
