@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using HrLeaveManagementDomain;
 using MediatR;
 
 namespace HrLeaveManagementApplication;
@@ -16,9 +17,15 @@ public class GetLeaveTypeDetailsQueryHandler : IRequestHandler<GetLeaveTypesDeta
 
     public async Task<LeaveTypeDetailsDto> Handle(GetLeaveTypesDetailsQuery request, CancellationToken cancellationToken)
     {
+        //Query the Database
         var leaveType = await _leaveTypeRepository.GetByIdAsync(request.Id);
+        
+        //Verify that record exists
+        if(leaveType == null)
+            throw new NotFoundException(nameof(LeaveType), request.Id);
+
         // Convert data objets to DTO objects
-        var data = _mapper.Map<LeaveTypeDetailsDto>(leaveType);
+        LeaveTypeDetailsDto data = _mapper.Map<LeaveTypeDetailsDto>(leaveType);
         
         return data;
     }
