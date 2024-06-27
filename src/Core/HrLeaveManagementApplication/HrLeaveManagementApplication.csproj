@@ -10,11 +10,6 @@
     <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features/LeaveType/Commands/DeleteLeaveType/" />
-    <Folder Include="Features/LeaveType/Commands/UpdateLeaveType/" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
