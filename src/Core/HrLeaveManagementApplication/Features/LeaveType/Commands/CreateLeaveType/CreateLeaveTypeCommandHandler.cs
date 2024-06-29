@@ -15,6 +15,10 @@ public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeComm
     public async Task<int> Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken)
     {
         //Validate incoming data
+        var validator = new CreateLeaveTypeCommandValidator(_leaveTypeRepository);
+        var validatorResult = await validator.ValidateAsync(request);
+        if(validatorResult.Errors.Any())
+            throw new BadRequestException("Invalid LeaveType", validatorResult);
 
         //Convert to domain entity object
         var leaveTypeToCreate = _mapper.Map<HrLeaveManagementDomain.LeaveType>(request);
@@ -26,3 +30,4 @@ public class CreateLeaveTypeCommandHandler : IRequestHandler<CreateLeaveTypeComm
         return leaveTypeToCreate.Id;
     }
 }
+//TODO: QUEDA PENDIENTE AGREGAR DEL MINUTO 13 EN ADELANTE

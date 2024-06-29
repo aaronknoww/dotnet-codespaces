@@ -1,5 +1,4 @@
-﻿using HrLeaveManagementDomain;
-using MediatR;
+﻿using MediatR;
 
 namespace HrLeaveManagementApplication;
 
