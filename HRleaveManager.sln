@@ -13,13 +13,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrLeaveManagementDomain", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrLeaveManagementApplication", "src\Core\HrLeaveManagementApplication\HrLeaveManagementApplication.csproj", "{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FEEF6540-FE31-4DBA-A248-ECC208FE9461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HrLeaveManagementPersistence", "src\Infrastructure\HrLeaveManagementPersistence\HrLeaveManagementPersistence.csproj", "{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C947831A-A3AF-4462-A009-70771DB08F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -34,10 +35,19 @@ Global
 		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FE8F2175-9D13-4DB5-B35F-4FF955E7D460} = {6C59E447-0A55-44B8-A7DA-AB5043197BE8}
 		{D56910A1-1306-4E0A-A4FE-98CEA8F4BE43} = {FE8F2175-9D13-4DB5-B35F-4FF955E7D460}
 		{9DB41FDD-0B04-4080-88A0-E9069C8C68E9} = {FE8F2175-9D13-4DB5-B35F-4FF955E7D460}
+		{FEEF6540-FE31-4DBA-A248-ECC208FE9461} = {6C59E447-0A55-44B8-A7DA-AB5043197BE8}
+		{3E5566BC-65C3-4CC2-BD2B-FFCE182DCFCF} = {FEEF6540-FE31-4DBA-A248-ECC208FE9461}
 	EndGlobalSection
 EndGlobal
